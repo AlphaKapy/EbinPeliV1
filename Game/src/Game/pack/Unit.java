@@ -7,9 +7,9 @@ package Game.pack;
 
 /**
  *
- * @author Ghost
+ * @author Matias
  */
-public class GameObject {
-    private float posX, posY;
-    private float sizeX, sizeY;
+public class Unit extends GameObject
+{
+    private int hp;
 }
