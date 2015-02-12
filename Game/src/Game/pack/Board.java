@@ -8,6 +8,7 @@ package Game.pack;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -22,14 +23,15 @@ public class Board extends JPanel implements ActionListener {
     Ship ship1;
     Image img;
     Timer time;
+    
     public Board(){
         ship1 = new Ship();
         addKeyListener(new AL());
         setFocusable(true);
-        ImageIcon i = new ImageIcon("./img/bg.png");
+        ImageIcon i = new ImageIcon("./img/bg12.png");
         time = new Timer(5, this);
         time.start();
-        
+        //BackgroundPanel.Paint();
     }
     public void actionPerformed(ActionEvent e){
         ship1.move();
