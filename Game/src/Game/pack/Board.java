@@ -47,6 +47,7 @@ public class Board extends JPanel implements ActionListener {
     private class AL extends KeyAdapter{
         public void keyReleased(KeyEvent e){
             ship1.keyReleased(e);
+            
         }
         public void keyPressed(KeyEvent e){
             ship1.keyPressed(e);
